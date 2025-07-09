@@ -1,0 +1,126 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/RobotoFlex-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+
+html {
+    font-size: 16px;
+}
+body {
+    font: 1rem / 1.5
+          "Roboto";
+}
+body.lock {
+    overflow: hidden;
+}
+
+.link:hover {
+    text-decoration: 1px solid underline;
+}
+
+.header {
+    margin-bottom: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+/* .header::before { */
+    /* content: ''; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background: #fff; */
+    /* z-index: 2; */
+/* } */
+.container {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1510px;
+}  
+.header .container {
+    padding-top: 30px;
+}
+.header_space {
+    visibility: hidden;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__list:nth-of-type(2) {
+    padding-left: 76px;
+}
+.nav__list {
+    display: flex;
+    gap: 42px;
+}
+.nav__logo {
+    max-width: 121px;
+    max-height: 161px;
+}
+.nav__img {
+    max-width: inherit;
+    max-height: inherit;
+}
+.nav-item-control,
+.header__burger { 
+    display: none;
+}
+
+.hero {
+    padding-top: 193px;
+    min-height: 100vh;
+    background: url(./img/header-bg.jpg) center / cover no-repeat;
+}
+.hero__main-title {
+    margin: 0 auto;
+    max-width: 900px;
+    /* font-size: 5.25rem; */
+    font-size: calc(3.25rem + 2 * ((100vw - 20rem) / (90 - 20)));
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.halva {
+    display: flex;
+}
+.halva__content {
+    padding: 90px 82px 95px 162px;
+    border-radius: 0 220px 0 0;
+    flex-basis: 0.57638888888;
+}
+.wild-halva {
+    max-width: 583px;
+}
+.blue-bg {
+    background: #abafd6;
+}
