@@ -12,26 +12,54 @@
         <div class="container header__container">
             <nav class="header__nav header-nav nav">
                 <span class="header_space"></span>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link link">Products</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link link">Who we are</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link link">Concept Store</a></li>
-                    <li class="nav__item nav-item-control"><a href="#" class="nav__link link">Recipes</a></li>
-                    <li class="nav__item nav-item-control"><a href="#" class="nav__link link">Log In</a></li>
-                    <li class="nav__item nav-item-control"><a href="#" class="nav__link link">Cart (0)</a></li>
-                    <li class="nav__item nav-item-control"><a href="#" class="nav__link link">EN</a></li>
+                <ul class="header-nav__list nav__list">
+                    <li class="header-nav__item nav__item">
+                      <a href="#" class="nav__link link">Products</a>
+                    </li>
+                    <li class="header-nav__item nav__item">
+                      <a href="#" class="nav__link link">Who we are</a>
+                    </li>
+                    <li class="header-nav__item nav__item">
+                      <a href="#" class="nav__link link">Concept Store</a>
+                    </li>
+                    <li class="header-nav__item nav__item nav-item-control">
+                      <a href="#" class="nav__link link">Recipes</a>
+                    </li>
+                    <li class="header-nav__item nav__item nav-item-control">
+                      <a href="#" class="nav__link link">Log In</a>
+                    </li>
+                    <li class="header-nav__item nav__item nav-item-control">
+                      <a href="#" class="nav__link link">Cart (0)</a>
+                    </li>
+                    <li class="header-nav__item nav__item nav-item-control">
+                      <a href="#" class="nav__link link">EN</a>
+                    </li>
                 </ul>
-                <div class="nav__logo"><img src="./img/Frame.svg" alt="logo" class="nav__img"></div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link link">Recipes</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link link">Log In</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link link">Cart (0)</a></li>
+                <div class="nav__logo">
+                  <img
+                    src="./img/Frame.svg" 
+                    alt="logo" 
+                    class="nav__img">
+                  </div>
+                <ul id="header-nav__list" class="header-nav__list nav__list">
+                    <li class="nav__item">
+                      <a href="#" class="nav__link link">Recipes</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link link">Log In</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#" class="nav__link link">Cart (0)</a>
+                    </li>
                 </ul>
                 <span class="header__lang">
                     EN
                 </span>
             </nav>
-            <button class="header__burger" id="header-burger">
+            <button
+              id="header-burger"
+              class="header__burger" 
+            >
                 <span></span>
             </button>
         </div>
@@ -75,24 +103,27 @@
         </section>
     </main>
     <footer class="footer">
+      <div class="container footer__container">
         <div class="footer__logo">
             <img
               src="./img/Frame.svg" 
               alt="wildsouls' logo" 
             />
         </div>
-        <div class="footer__info">
-            <h2 class="footer__title title">Stay Wild</h2>
+        <div class="footer__flex">
+          <div class="footer__info">
             <form action="#" class="footer__form form">
+              <h2 class="footer__title title">Stay Wild</h2>
               <input
                 class="footer__input input"
-                type="text" 
+                type="email" 
                 placeholder="Write your email"
               />
+              <br />
               <button class="footer__button">Send</button>
             </form>
             <div class="footer__media footer-media">
-                <h3 class="footer-media__sub-title subtitle">
+                <h3 class="footer-media__sub-title sub-title">
                   Follow Us
                 </h3>
                 <ul class="footer-media__logos">
@@ -113,11 +144,8 @@
                       class="footer-media__link"
                     >
                       <img
-                        src="./img/facebook.svg
-                         " 
-
-                         alt="
-                        facebook" 
+                        src="./img/facebook.svg"
+                        alt="facebook" 
                       />
                     </a>
                   </li>
@@ -156,7 +184,8 @@
                   Website by Big Horror + No Matter
                 </span>
             </div>
-            <nav class="footer__nav footer-nav nav">
+          </div>
+          <nav class="footer__nav footer-nav nav">
                 <ul class="footer-nav__list nav__list">
                     <li class="footer-nav__item">
                         <h3 class="footer-nav__sub-title sub-title">
@@ -205,6 +234,23 @@
                           </li>
                         </ul>
                     </li>
+                    <li class="footer-nav__item nav-item-contact">
+                      <h3 class="footer-nav__sub-title sub-title">
+                        Contact
+                      </h3>
+                      <ul class="footer__inner-list">
+                        <li class="footer__inner-item">
+                          <a href="#" class="footer__inner-link link">
+                            info@wildsouls.gr
+                          </a>
+                        </li>
+                        <li class="footer__inner-item">
+                          <a href="#" class="footer__inner-link link">
+                            +30 210 3231 438
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
                     <li class="footer-nav__item">
                         <h3 class="footer-nav__sub-title sub-title">
                           Company
@@ -233,23 +279,6 @@
                           <li class="footer__inner-item">
                             <a href="#" class="footer__inner-link link">
                               Recipes
-                            </a>
-                          </li>
-                        </ul>
-                    </li>
-                    <li class="footer-nav__item">
-                        <h3 class="footer-nav__sub-title sub-title">
-                          Contact
-                        </h3>
-                        <ul class="footer__inner-list">
-                          <li class="footer__inner-item">
-                            <a href="#" class="footer__inner-link link">
-                              info@wildsouls.gr
-                            </a>
-                          </li>
-                          <li class="footer__inner-item">
-                            <a href="#" class="footer__inner-link link">
-                              +30 210 3231 438
                             </a>
                           </li>
                         </ul>
@@ -287,11 +316,12 @@
                         </ul>
                     </li>
                 </ul>
-            </nav>
+          </nav>
         </div>
-        <div class="footer__mottos footer-mottos">
-          <ul class="footer-mottos__list">
-            <li class="footer-mottos__item">
+      </div>
+      <div class="footer__mottos footer-mottos">
+        <ul class="footer-mottos__list">
+          <li class="footer-mottos__item">
               <article class="footer-mottos__article footer-mottos-article footer-article">
                 <ul class="footer-article__logos">
                   <li class="footer-article__logo">
@@ -308,8 +338,8 @@
                   </li>
                 </ul>
               </article>
-            </li>
-            <li class="footer-mottos__item">
+          </li>
+          <li class="footer-mottos__item">
               <article class="footer-mottos__article footer-mottos-article footer-article">
                 <ul class="footer-article__logos">
                   <li class="footer-article__logo">
@@ -326,8 +356,8 @@
                   </li>
                 </ul>
               </article>
-            </li>
-            <li class="footer-mottos__item">
+          </li>
+          <li class="footer-mottos__item">
               <article class="footer-mottos__article footer-mottos-article footer-article">
                 <ul class="footer-article__logos">
                   <li class="footer-article__logo">
@@ -344,9 +374,9 @@
                   </li>
                 </ul>
               </article>
-            </li>
-          </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
     </footer>
     <script src="main.js"></script>
 </body>

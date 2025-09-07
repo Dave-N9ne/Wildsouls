@@ -1,17 +1,14 @@
+@import './reset.css';
+@import './footer.css';
+
 @font-face {
     font-family: "Roboto";
     src: url(../fonts/RobotoFlex-Regular.woff2);
 }
 
-@import './footer.css';
 
 .none {
     display: none;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 img {
     width: 100%;
@@ -73,8 +70,12 @@ body.lock {
     padding: 0 30px;
     max-width: 1510px;
 }
+.title,
+.sub-title {
+    font-weight: 700;
+}
 .title {
-    font-size: calc(1.875rem + 3.4375 * ((100vw - 320px) / (90 - 20)));
+    font-size: calc(1.875rem + 3.4375 * ((100vw - 20rem) / (90 - 20)));
 }
 .sub-title {
     font-size: calc(1.375rem + 1.25 * ((100vw - 20rem) / (90 - 20)));
@@ -100,10 +101,10 @@ body.lock {
     display: flex;
     justify-content: space-between;
 }
-.nav__list:nth-of-type(2) {
+.header-nav__list:nth-of-type(2) {
     padding-left: 76px;
 }
-.nav__list {
+.header-nav__list {
     display: flex;
     gap: 42px;
 }

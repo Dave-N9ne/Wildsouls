@@ -1,6 +1,6 @@
 function addNavMenu () {
     const button = document.querySelector('#header-burger');
-    const nav = document.querySelector('.nav__list');
+    const nav = document.querySelector('#header-nav__list');
     const body = document.body;
     
     button.addEventListener ('click', function (event) {
